@@ -46,7 +46,8 @@
   background-color: #4a5eaa;
   display: flex;
   align-items: center;
-  width: 1100px;
+  max-width: 1100px;
+  width: 100%;
   justify-content: space-between;
 }
 
@@ -64,9 +65,8 @@
 }
 
 .profile-img {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
+  width: 130px;
+  height: 150px;
   background-color: #d4c6c6;
   border: 1px solid #fff;
   margin-right: 25px;
@@ -117,6 +117,8 @@
 
 .works-item .works-item_date p:last-child {
   color: #666;
+  font-style: italic;
+  font-size: 1rem;
 }
 
 .stepper .stepper-item {
@@ -159,4 +161,111 @@
 .technology {
   font-weight: bold;
   font-style: italic;
+}
+
+@media (max-width: 1100px) {
+  .line {
+    display: none;
+  }
+
+  .header,
+  .tags-wrapper,
+  .about,
+  .works,
+  .education {
+    padding: 0 5%;
+  }
+
+  .header {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 20px 5%;
+  }
+
+  .header .profile {
+    width: 100%;
+    margin-bottom: 50px;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .header .profile h2 {
+    text-align: center;
+  }
+
+  .header .bio {
+    width: 50%;
+  }
+
+  .bio .bio-link {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 900px) {
+  .wrapper {
+    overflow: hidden;
+  }
+
+  .header {
+    width: auto;
+  }
+
+  .stepper .stepper-item {
+    border-left: none;
+  }
+
+  .stepper .stepper-item:before {
+    display: none;
+  }
+
+  .works-item {
+    padding-left: 0;
+    flex-direction: column;
+    margin-top: 15px;
+  }
+
+  .stepper .stepper-item {
+    border-top: 2px solid #4a5eaa;
+  }
+
+  .stepper .stepper-item:last-child {
+    border-bottom: 2px solid #4a5eaa;
+  }
+
+  .works-item .works-item_date {
+    margin-bottom: 25px;
+    position: relative;
+    width: 100%;
+  }
+
+  .stepper .stepper-item:first-child::after,
+  .stepper .stepper-item:last-child::after {
+    display: none;
+  }
+
+  .profile h3 {
+    width: 80%;
+  }
+
+  .works-item .works-item_description {
+    width: 100%;
+  }
+
+  .profile h2 {
+    margin-bottom: 25px;
+  }
+
+  .bio .bio-link {
+    justify-content: flex-start;
+  }
+
+  body {
+    padding-bottom: 50px;
+  }
+
+  h2,
+  h3 {
+    line-height: 1.5;
+  }
 }
