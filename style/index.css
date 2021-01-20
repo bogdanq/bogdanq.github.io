@@ -65,8 +65,8 @@
 }
 
 .profile-img {
-  width: 130px;
-  height: 150px;
+  width: 150px;
+  height: 170px;
   background-color: #d4c6c6;
   border: 1px solid #fff;
   margin-right: 25px;
@@ -109,6 +109,9 @@
   display: block;
   margin-right: 20px;
   width: 15%;
+}
+.works-item .works-item_date p {
+  font-size: 15px !important;
 }
 
 .works-item .works-item_description {
