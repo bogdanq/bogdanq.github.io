@@ -46,13 +46,13 @@
   background-color: #4a5eaa;
   display: flex;
   align-items: center;
-  max-width: 1100px;
+  max-width: 1200px;
   width: 100%;
   justify-content: space-between;
 }
 
 .wrapper {
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -97,6 +97,11 @@
   color: #666;
 }
 
+.works-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .works-item {
   position: relative;
   display: flex;
@@ -111,11 +116,15 @@
   width: 15%;
 }
 .works-item .works-item_date p {
-  font-size: 15px !important;
+  font-size: 13px !important;
 }
 
 .works-item .works-item_description {
   width: 80%;
+}
+
+.works-item .works-item_description h3 {
+  line-height: 30px;
 }
 
 .works-item .works-item_date p:last-child {
@@ -124,8 +133,13 @@
   font-size: 1rem;
 }
 
+.stepper {
+  width: 50%;
+  flex: 1;
+  min-width: 300px;
+}
+
 .stepper .stepper-item {
-  /* padding: 50px 0; */
   border-left: 1px solid #4a5eaa;
   position: relative;
 }
@@ -133,7 +147,7 @@
 .stepper .stepper-item:before {
   content: "";
   position: absolute;
-  top: calc(50% - 25px);
+  top: 5%;
   left: -15px;
   width: 25px;
   height: 25px;
@@ -150,7 +164,7 @@
   left: -2px;
   background-color: #fff;
   width: 5px;
-  height: 50%;
+  height: 15%;
 }
 
 .stepper .stepper-item:first-child::after {
