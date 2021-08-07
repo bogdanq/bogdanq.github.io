@@ -175,14 +175,13 @@
         </p>
       </div>
       <div class="works">
-        <h2>Опыт работы 3 года 1 месяц</h2>
+        <h2 id="experience">Опыт работы</h2>
         <div class="works-wrapper">
           <div class="stepper">
             <div class="stepper-item">
               <div class="works-item">
                 <div class="works-item_date">
                   <p>апрель 2021 - текущее время</p>
-                  <p>3 месяца</p>
                 </div>
                 <div class="works-item_description">
                   <h3>ООО БК «Олимп» (frontend developer)</h3>
@@ -265,7 +264,7 @@
                   <p>1 год</p>
                 </div>
                 <div class="works-item_description">
-                  <h3>Букмекерская компания (fullstack developer)</h3>
+                  <h3>БК «1xBet» (fullstack developer)</h3>
                   <p>
                     Разработка мультидоменного SPA, как фронт части, так и
                     прокси-сервиса на Nodejs, поддержание внутренних проектов.
@@ -274,8 +273,7 @@
                       href="https://www.npmjs.com/package/react-router-reconfig"
                       target="_blank"
                       >роутером</a
-                    >. (Паралельно разработка мобильного приложения React
-                    Native).
+                    >.
                   </p>
                   <p class="paragraph technology">Используемые технологии:</p>
                   <div class="tags">
@@ -393,7 +391,6 @@
               <div class="works-item">
                 <div class="works-item_date">
                   <p>апрель 2021 - текущее время</p>
-                  <p>3 месяца</p>
                 </div>
                 <div class="works-item_description">
                   <h3>Преподаватель курса по React в GeekBrains</h3>
@@ -414,12 +411,11 @@
               <div class="works-item">
                 <div class="works-item_date">
                   <p>апрель 2020 - текущее время</p>
-                  <p>1 год</p>
                 </div>
                 <div class="works-item_description">
-                  <h3>Разработка мобильного приложения React Native</h3>
+                  <h3>Explory</h3>
                   <p>
-                    Участие в разработке мобильного приложения
+                    Разработка мобильного приложения
                     <a href="https://explory.io/" target="_blank">Explory</a>,
                     используя методологию atomic design и featureslices
                   </p>
@@ -457,4 +453,31 @@
       </div>
     </div>
   </body>
+
+  <script>
+    const experienceTitle = document.querySelector("#experience");
+    const START_DATE = "2018-06-01";
+
+    const year = new Date().getFullYear() - new Date(START_DATE).getFullYear();
+    const month = new Date().getMonth() - new Date(START_DATE).getMonth();
+
+    function declOfNum(number, words) {
+      const word =
+        words[
+          number % 100 > 4 && number % 100 < 20
+            ? 2
+            : [2, 0, 1, 1, 1, 2][number % 10 < 5 ? Math.abs(number) % 10 : 5]
+        ];
+
+      return `${number} ${word}`;
+    }
+
+    const experience = `Опыт работы ${declOfNum(year, [
+      "год",
+      "года",
+      "лет",
+    ])} ${declOfNum(month, ["месяц", "месяца", "месяцев"])}`;
+
+    experienceTitle.innerText = experience || "Опыт работы";
+  </script>
 </html>
