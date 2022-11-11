@@ -61,6 +61,16 @@ function sherlockAndAnagrams(s) {
   return count;
 }
 
-console.log(sherlockAndAnagrams("abba")); // 4
-console.log(sherlockAndAnagrams("kkkk"));// 10
+console.log("abba =>", sherlockAndAnagrams("abba")); // 4
+console.log("kkkk =>",sherlockAndAnagrams("kkkk")); // 10
+
+
+//<!!>
+
+const time = window.performance.now();
+const result = {
+  'sherlockAndAnagrams(abba) => ': sherlockAndAnagrams("abba"),
+  'sherlockAndAnagrams(kkkk) => ': sherlockAndAnagrams("kkkk"),
+}
+return { ...result, timeEnd: window.performance.now() - time }
 `;

@@ -15,4 +15,13 @@ function fibR(n) {
  if (n < 2) return 1;
  else return fibR(n - 1) + fibR(n - 2);
 }
+
+//<!!>
+
+const time = window.performance.now();
+const result = {
+  'dynamicFib(12) =>': dynamicFib(12),
+  'fibR(12) =>': fibR(12),
+}
+return { ...result, timeEnd: window.performance.now() - time }
 `;

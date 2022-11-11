@@ -1,4 +1,5 @@
 import { Menu } from "antd";
+import { useMediaQuery } from "react-responsive";
 import { Link, useLocation } from "react-router-dom";
 import { CaretRightOutlined, SearchOutlined } from "@ant-design/icons";
 import { snipetsList } from "../../features/snipets";
@@ -6,11 +7,17 @@ import { snipetsList } from "../../features/snipets";
 export function DefaultSidebar() {
   const { pathname, hash } = useLocation();
 
+  const isMobile = useMediaQuery({
+    query: `(max-width: calc(680px - 1px))`,
+  });
+
+  const isOpenSub = isMobile ? undefined : ["sub1"];
+
   return (
     <Menu
       mode="inline"
       selectedKeys={[`${pathname}${hash}`]}
-      openKeys={["sub1"]}
+      openKeys={isOpenSub}
     >
       <Menu.ItemGroup title="Демки из гитхаба" />
       <Menu.Item icon={<SearchOutlined />} key="/graph">

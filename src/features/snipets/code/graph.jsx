@@ -43,4 +43,12 @@ function countTriplets(graph) {
 }
 
 console.log(countTriplets(createGraph([1, 1, 1, 1, 1], 1))); // 10
+
+//<!!>
+
+const time = window.performance.now();
+const result = {
+  'countTriplets(createGraph([1, 1, 1, 1, 1], 1)) =>': countTriplets(createGraph([1, 1, 1, 1, 1], 1)),
+}
+return { ...result, timeEnd: window.performance.now() - time }
 `;

@@ -39,4 +39,14 @@ function sotrOddNumbers(arr) {
 console.log(sotrOddNumbers([5, 2, 4, 2, 3])); // 3/2/4/2/5
 console.log(sotrOddNumbers([5, 2, 2, 3])); // 3/2/2/5
 console.log(sotrOddNumbers([5, 2, 2, 30, 12, 12, 15])); // 5 2 2 30 12 12 15
+
+//<!!>
+
+const time = window.performance.now();
+const result = {
+  'sotrOddNumbers([5, 2, 4, 2, 3]) =>': sotrOddNumbers([5, 2, 4, 2, 3]),
+  'sotrOddNumbers([5, 2, 2, 3]) =>': sotrOddNumbers([5, 2, 2, 3]),
+  'sotrOddNumbers([5, 2, 2, 30, 12, 12, 15]) =>': sotrOddNumbers([5, 2, 2, 30, 12, 12, 15]),
+}
+return { ...result, timeEnd: window.performance.now() - time }
 `;

@@ -24,7 +24,7 @@ export const routes = (
     <Route path="/" element={<VCPage />} />
 
     {fromGithub.map((it) => (
-      <Route path={it.path} element={it.page} />
+      <Route key={it.path} path={it.path} element={it.page} />
     ))}
 
     {snipetsList.map((it) => (
