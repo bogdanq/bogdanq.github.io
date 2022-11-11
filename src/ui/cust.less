@@ -1,0 +1,23 @@
+@import "antd/lib/style/themes/default.less";
+@import "antd/dist/antd.less";
+@import "./overides/varriables.less";
+@import "./overides/input.less";
+@import "./overides/menu.less";
+@import "./overides/notification.less";
+@import "./overides/vc.less";
+
+html,
+body {
+  overflow-x: hidden;
+  background-color: var(--hub-menu-bg);
+  scroll-behavior: smooth;
+}
+
+#root {
+  height: 100vh;
+  width: 100%;
+}
+
+.ant-input-suffix {
+  transition: all @animation-duration-base @ease-in-out;
+}

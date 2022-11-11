@@ -1,0 +1,31 @@
+.ant-notification-notice {
+  box-shadow: none;
+  border-radius: 10px;
+}
+
+.ant-notification {
+  margin-right: 0;
+}
+
+.ant-notification-notice-error,
+.ant-notification-notice-warning,
+.ant-notification-notice-success {
+  .ant-notification-notice-icon,
+  .ant-notification-notice-message,
+  .ant-notification-notice-close-x,
+  .ant-notification-notice-description {
+    color: #fff;
+  }
+}
+
+.ant-notification-notice-error {
+  background-color: @error-color;
+}
+
+.ant-notification-notice-success {
+  background-color: @primary-color;
+}
+
+.ant-notification-notice-warning {
+  background-color: @warning-color;
+}

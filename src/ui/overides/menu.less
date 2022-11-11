@@ -1,0 +1,149 @@
+.ant-menu,
+.ant-menu-sub.ant-menu-inline {
+  border: none;
+  background: var(--hub-menu-bg);
+  color: var(--hub-menu-item-color);
+
+  a {
+    text-decoration: none !important;
+  }
+}
+
+.ant-menu > .langs {
+  padding-left: 24px;
+
+  .ant-typography {
+    cursor: pointer;
+    color: var(--hub-menu-item-color);
+
+    &.active {
+      color: var(--hub-menu-highlight-color);
+    }
+  }
+}
+
+.ant-menu-submenu-expand-icon,
+.ant-menu-submenu-arrow {
+  color: var(--hub-menu-item-color);
+}
+
+.ant-menu-item,
+.ant-menu-submenu-title {
+  border-radius: 8px;
+
+  > svg {
+    fill: var(--hub-menu-item-color);
+    width: 22px;
+    height: 22px;
+
+    path,
+    circle {
+      stroke: var(--hub-menu-item-color);
+    }
+  }
+}
+
+.ant-layout-sider {
+  overflow: hidden;
+}
+
+.ant-menu-item:focus-visible,
+.ant-menu-submenu-title:focus-visible {
+  box-shadow: none;
+}
+
+.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected,
+.ant-menu-item:active,
+.ant-menu-submenu-title:active {
+  background-color: var(--hub-item-active-bg);
+}
+
+.ant-menu-light .ant-menu-item:hover,
+.ant-menu-light .ant-menu-item-active,
+.ant-menu-light .ant-menu:not(.ant-menu-inline) .ant-menu-submenu-open,
+.ant-menu-light .ant-menu-submenu-active,
+.ant-menu-light .ant-menu-submenu-title:hover,
+.ant-menu-submenu:hover
+  > .ant-menu-submenu-title
+  > .ant-menu-submenu-expand-icon,
+.ant-menu-submenu:hover > .ant-menu-submenu-title > .ant-menu-submenu-arrow,
+.ant-menu-submenu-selected,
+// вертикальное меню
+.ant-menu-vertical .ant-menu-submenu-selected {
+  color: var(--hub-menu-highlight-color);
+}
+
+.ant-menu-item-selected {
+  color: var(--hub-menu-highlight-color);
+
+  a {
+    color: var(--hub-menu-highlight-color) !important;
+    text-decoration: none !important;
+  }
+}
+
+.ant-layout-sider-zero-width-trigger {
+  display: block;
+
+  @media (min-width: 1025px) {
+    display: none;
+  }
+}
+
+.ant-layout-sider-trigger {
+  display: block;
+
+  @media (min-width: 1300px) {
+    display: none;
+  }
+}
+
+.ant-menu-item-group-title {
+  color: var(--hub-menu-item-color);
+}
+
+.ant-layout-sider-children {
+  height: calc(100% - 48px); // 50px тригер меню на мобилке
+  overflow: scroll;
+
+  a {
+    color: var(--hub-menu-item-color);
+
+    &:hover {
+      color: var(--hub-menu-highlight-color);
+    }
+  }
+
+  @media (min-width: 1025px) {
+    // min-height: 100%;
+    height: 100%;
+  }
+}
+
+.ant-layout-sider-collapsed {
+  input,
+  .ant-input-affix-wrapper {
+    visibility: hidden;
+  }
+
+  .ant-menu-item,
+  .ant-menu-submenu-title {
+    padding: 0 !important;
+  }
+
+  .ant-menu .ant-menu-item-selected {
+    background-color: transparent;
+  }
+}
+
+.ant-layout-sider-zero-width-trigger {
+  border-radius: 0;
+}
+
+.ant-layout-sider-has-trigger {
+  padding-bottom: 0;
+}
+
+.ant-menu-submenu-popup > .ant-menu {
+  background-color: var(--hub-menu-bg);
+}
