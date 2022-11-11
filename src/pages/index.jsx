@@ -83,6 +83,18 @@ export const fromGist = [
       />
     ),
   },
+  {
+    path: "/gists/gql",
+    name: "Graphql",
+    page: (
+      <FromGistPage
+        isMardDown
+        name="Graphql"
+        description="Заметки по Apollo и Graphql"
+        url="https://raw.githubusercontent.com/bogdanq/apollo-graphQL/master/README.md"
+      />
+    ),
+  },
 ];
 
 export const routes = (
