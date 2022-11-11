@@ -57,11 +57,6 @@ export function SideBarProfile({ userName }) {
           <Typography.Text className="name" ellipsis>
             <Link to="/">{userName}</Link>
           </Typography.Text>
-          <Row>
-            <Typography.Text className="subtitle" ellipsis>
-              Демки и примеры задач
-            </Typography.Text>
-          </Row>
         </Col>
       </Row>
     </Wrapper>

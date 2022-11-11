@@ -1,4 +1,6 @@
-import { Typography, Row, Col, Steps } from "antd";
+import { useRef } from "react";
+import { SaveOutlined } from "@ant-design/icons";
+import { Typography, Row, Col, Steps, PageHeader, Button } from "antd";
 import styled from "styled-components";
 import html2canvas from "jspdf-html2canvas";
 import { DefaultSidebar } from "../../ui/organisms";
@@ -6,7 +8,6 @@ import { MainTemplate } from "../../ui/templates";
 import bio from "../../assets/bio.jpeg";
 import { useTimeWork } from "./use-time-work";
 import { works, paralelWorks } from "./data-mock";
-import { useRef } from "react";
 
 const Header = styled.div`
   /* height: 400px; */
@@ -80,13 +81,22 @@ export function VCPage({ snipet }) {
       allowTaint: true,
       windowHeight: window.outerHeight,
       height: window.outerHeight,
-      output: "bogdan-resume.pdf",
+      output: "bogdan_shelomanov_vc.pdf",
     });
   }
 
   return (
     <MainTemplate noPadding sidebar={<DefaultSidebar />}>
       <div ref={ref}>
+        <PageHeader
+          title="Резюме"
+          subTitle="Демки и примеры задач"
+          extra={[
+            <Button key="3" icon={<SaveOutlined />} onClick={printDocument}>
+              download vc
+            </Button>,
+          ]}
+        />
         <Header id="divToPrint">
           <Row>
             <Col xs={24} xl={5}>
