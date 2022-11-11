@@ -25,7 +25,7 @@
     "build": "craco build",
     "test": "craco test",
     "eject": "react-scripts eject",
-    "deploy": "npx gh-pages -d dist"
+    "deploy": "npx gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
