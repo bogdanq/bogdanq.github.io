@@ -2,6 +2,8 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://bogdanq.github.io",
+  "main": "src/index.js",
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
     "@craco/craco": "^7.0.0",
