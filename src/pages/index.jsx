@@ -14,6 +14,12 @@ export const fromGithub = [
     name: "graph search path",
   },
   {
+    path: "/parser",
+    page: <FromGithubPage url="https://bogdanq.github.io/gui-parser/" />,
+    icon: <SearchOutlined />,
+    name: "parser gui",
+  },
+  {
     path: "/react",
     page: <FromGithubPage url="https://codesandbox.io/s/my-react-dhuzx" />,
     icon: <SearchOutlined />,
