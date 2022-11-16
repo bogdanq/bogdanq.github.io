@@ -1,6 +1,12 @@
-import { fib, anagrams, graph, odd } from "./code";
+import { fib, anagrams, graph, odd, countPairsInt } from "./code";
 
 export const snipetsList = [
+  {
+    title: "Поиск одинаковых делителей",
+    code: countPairsInt,
+    id: "countPairsInt",
+    description: "задача для собеседование (lvl ***)",
+  },
   {
     title: "Поиск анаграмм",
     code: anagrams,
