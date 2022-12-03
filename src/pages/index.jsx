@@ -9,25 +9,56 @@ import { FromGistPage } from "./from-gists";
 export const fromGithub = [
   {
     path: "/graph",
-    page: <FromGithubPage url="https://bogdanq.github.io/algorithms/" />,
+    page: (
+      <FromGithubPage
+        url="https://bogdanq.github.io/algorithms/"
+        description="Реализация визуализации прохода алгоритмов поиска кратчайшего пути по графу"
+      />
+    ),
     icon: <SearchOutlined />,
     name: "graph search path",
   },
   {
     path: "/parser",
-    page: <FromGithubPage url="https://bogdanq.github.io/gui-parser/" />,
+    page: (
+      <FromGithubPage
+        url="https://bogdanq.github.io/gui-parser/"
+        description="Парсер позволяет получить DOM-модель любой вложенности и вывести ее для более удобной выборки елементов с последующим изменением их стилей (таким образом пользователю не нужно открывать инспектор, что бы проверить, как выглядит модель)"
+      />
+    ),
     icon: <SearchOutlined />,
     name: "parser gui",
   },
   {
+    path: "/creator",
+    page: (
+      <FromGithubPage
+        url="https://bogdanq.github.io/component-creator/"
+        description="Создание верстки без использования кода (фича используется в конструкторе лендингов)"
+      />
+    ),
+    icon: <SearchOutlined />,
+    name: "component creator",
+  },
+  {
     path: "/react",
-    page: <FromGithubPage url="https://codesandbox.io/s/my-react-dhuzx" />,
+    page: (
+      <FromGithubPage
+        url="https://codesandbox.io/s/my-react-dhuzx"
+        description="Демка из codesandbox (может долго прогружаться)"
+      />
+    ),
     icon: <SearchOutlined />,
     name: "my react",
   },
   {
     path: "/styled",
-    page: <FromGithubPage url="https://codesandbox.io/s/mystyled-t7p2d" />,
+    page: (
+      <FromGithubPage
+        url="https://codesandbox.io/s/mystyled-t7p2d"
+        description="Демка из codesandbox (может долго прогружаться)"
+      />
+    ),
     icon: <SearchOutlined />,
     name: "my styled",
   },

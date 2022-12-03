@@ -1,4 +1,5 @@
 import { useSearchParams } from "react-router-dom";
+import { Alert } from "antd";
 import styled from "styled-components";
 import IframeResizer from "iframe-resizer-react";
 import { MainTemplate } from "../../ui/templates";
@@ -10,7 +11,7 @@ const Frame = styled(IframeResizer)`
   height: 100%;
 `;
 
-export function FromGithubPage({ url }) {
+export function FromGithubPage({ url, description }) {
   const [params] = useSearchParams();
   const hasParams = Array.from(params.values()).length > 0;
 
@@ -18,6 +19,8 @@ export function FromGithubPage({ url }) {
 
   return (
     <MainTemplate sidebar={<DefaultSidebar />} noPadding>
+      {description && <Alert description={description} type="info" />}
+
       <Frame src={urlWithParams} scrolling />
     </MainTemplate>
   );
