@@ -38,7 +38,7 @@ export const fromGithub = [
       />
     ),
     icon: <SearchOutlined />,
-    name: "component creator",
+    name: "no code editor",
   },
   {
     path: "/react",
