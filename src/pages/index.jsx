@@ -34,7 +34,7 @@ export const fromGithub = [
     page: (
       <FromGithubPage
         url="https://bogdanq.github.io/component-creator/"
-        description="Создание верстки без использования кода (фича используется в конструкторе лендингов)"
+        description="Создание верстки без использования кода, доступен адаптив (в более новых ерсиях доступна загрузка картинок и создание валидного css-кода фича используется в конструкторе лендингов)"
       />
     ),
     icon: <SearchOutlined />,
@@ -45,7 +45,7 @@ export const fromGithub = [
     page: (
       <FromGithubPage
         url="https://codesandbox.io/s/my-react-dhuzx"
-        description="Демка из codesandbox (может долго прогружаться)"
+        description="Демка своего React из codesandbox (может долго прогружаться)"
       />
     ),
     icon: <SearchOutlined />,
@@ -56,7 +56,7 @@ export const fromGithub = [
     page: (
       <FromGithubPage
         url="https://codesandbox.io/s/mystyled-t7p2d"
-        description="Демка из codesandbox (может долго прогружаться)"
+        description="Демка своих styled из codesandbox (может долго прогружаться)"
       />
     ),
     icon: <SearchOutlined />,
