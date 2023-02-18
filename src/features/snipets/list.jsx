@@ -1,6 +1,12 @@
-import { fib, anagrams, graph, odd, countPairsInt } from "./code";
+import { fib, anagrams, graph, odd, countPairsInt, irv } from "./code";
 
 export const snipetsList = [
+  {
+    title: "Алгоритм irv (Instant Runoff Voting)",
+    code: irv,
+    id: "irv",
+    description: "задача для собеседование из codewars (lvl ****)",
+  },
   {
     title: "Поиск одинаковых делителей",
     code: countPairsInt,
