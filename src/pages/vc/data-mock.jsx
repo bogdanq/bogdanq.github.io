@@ -28,12 +28,26 @@ export const skils = {
   rp: "Rollup",
   psq: "Postgress",
   antd: "UI kit",
+  rq: "React query",
 };
 
 export const works = [
   {
+    title: "ПАО Сбербанк (руководитель направления)",
+    subTitle: <p>март 2023 - текущее время</p>,
+    status: "finish",
+    description: (
+      <>
+        <p>-</p>
+        {["ts", "react", "rq", "er", "rx", "sc", "ut"].map((skill) => (
+          <Tag key={skill}>{skils[skill]}</Tag>
+        ))}
+      </>
+    ),
+  },
+  {
     title: "ООО БК «Олимп» (frontend developer)",
-    subTitle: <p>апрель 2021 - текущее время</p>,
+    subTitle: <p>апрель 2021 - март 2023</p>,
     status: "finish",
     description: (
       <>

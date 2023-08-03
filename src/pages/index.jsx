@@ -8,11 +8,47 @@ import { FromGistPage } from "./from-gists";
 
 export const fromGithub = [
   {
+    path: "/graph-snake",
+    page: (
+      <FromGithubPage
+        url="https://bogdanq.github.io/snake-graph/"
+        description={
+          <>
+            Реализация змейки с ботами на графах боты имеют различные евристики
+            (манхеттен/пифагор/чебышев) и алгоритмы (поиск в
+            ширину/глубину/а-стар/дейкстра).
+            <a
+              href="https://github.com/bogdanq/snake-graph/tree/main"
+              rel="noreferrer"
+              target="_blank"
+            >
+              link
+            </a>
+          </>
+        }
+      />
+    ),
+    icon: <SearchOutlined />,
+    name: "graph ai snake",
+  },
+  {
     path: "/graph",
     page: (
       <FromGithubPage
         url="https://bogdanq.github.io/algorithms/"
-        description="Реализация визуализации прохода алгоритмов поиска кратчайшего пути по графу"
+        description={
+          <>
+            Реализация визуализации прохода алгоритмов поиска кратчайшего пути
+            по графу
+            <a
+              href="https://github.com/bogdanq/algorithms"
+              rel="noreferrer"
+              target="_blank"
+            >
+              link
+            </a>
+          </>
+        }
       />
     ),
     icon: <SearchOutlined />,
