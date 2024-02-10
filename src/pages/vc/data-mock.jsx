@@ -30,6 +30,7 @@ export const skils = {
   antd: "UI kit",
   rq: "React query",
   analitics: "Аналитика",
+  next: "Next js",
 };
 
 export const works = [
@@ -183,6 +184,28 @@ export const works = [
 ];
 
 export const paralelWorks = [
+  {
+    title: "Группа компаний «Просвещение»",
+    subTitle: <p>июнь 2023 - январь 2024 (7 месяцев)</p>,
+    status: "finish",
+    description: (
+      <>
+        <p>
+          Помощь в разработке основного сайта для
+          <span>
+            {" "}
+            <a href="https://prosv.ru/" rel="noreferrer" target="_blank">
+              «Просвещение»
+            </a>{" "}
+          </span>
+        </p>
+
+        {["ts", "react", "next", "alo"].map((skill) => (
+          <Tag key={skill}>{skils[skill]}</Tag>
+        ))}
+      </>
+    ),
+  },
   {
     title: "Преподаватель курсов React в GeekBrains",
     subTitle: <p>апрель 2021 - сентябрь 2022 (19 месяцев)</p>,

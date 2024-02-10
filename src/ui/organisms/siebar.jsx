@@ -4,21 +4,24 @@ import { Link, useLocation } from "react-router-dom";
 import { CaretRightOutlined, SearchOutlined } from "@ant-design/icons";
 import { snipetsList } from "../../features/snipets";
 import { fromGithub, fromGist } from "../../pages";
+import { useState } from "react";
 
 export function DefaultSidebar() {
   const { pathname, hash } = useLocation();
+  const [openKeys, setOpenKeys] = useState(["sub1"]);
 
-  const isMobile = useMediaQuery({
-    query: `(max-width: calc(680px - 1px))`,
+  const isLaptopAndBelow = useMediaQuery({
+    query: `(max-width: calc(1300px - 1px))`,
   });
-
-  const isOpenSub = isMobile ? undefined : ["sub1", "sub2"];
 
   return (
     <Menu
       mode="inline"
       selectedKeys={[`${pathname}${hash}`]}
-      openKeys={isOpenSub}
+      openKeys={isLaptopAndBelow ? [] : openKeys}
+      onOpenChange={(keys) => {
+        setOpenKeys(keys);
+      }}
     >
       <Menu.ItemGroup title="Демки из гитхаба" />
       {fromGithub.map((item) => (

@@ -1,8 +1,20 @@
+function monthDiff(dateFrom, dateTo = new Date()) {
+  const [year, month] = (
+    (dateTo.getMonth() -
+      dateFrom.getMonth() +
+      12 * (dateTo.getFullYear() - dateFrom.getFullYear())) /
+    12
+  )
+    .toFixed(1)
+    .split(".");
+
+  return [year, month];
+}
+
 export const useTimeWork = () => {
   const START_DATE = "2018-06-01";
 
-  const year = new Date().getFullYear() - new Date(START_DATE).getFullYear();
-  const month = new Date().getMonth() - new Date(START_DATE).getMonth();
+  const [year, month] = monthDiff(new Date(START_DATE));
 
   function declOfNum(number, words) {
     const word =

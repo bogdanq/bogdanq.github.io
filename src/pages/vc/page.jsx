@@ -93,7 +93,7 @@ export function VCPage({ snipet }) {
           subTitle="Демки и примеры задач"
           extra={[
             <Button key="3" icon={<SaveOutlined />} onClick={printDocument}>
-              download vc
+              download cv
             </Button>,
           ]}
         />

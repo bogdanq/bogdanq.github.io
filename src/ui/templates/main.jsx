@@ -3,7 +3,7 @@ import { Layout } from "antd";
 import { useMediaQuery } from "react-responsive";
 import styled, { css } from "styled-components";
 import { MenuFoldOutlined, MenuUnfoldOutlined } from "@ant-design/icons";
-import { Content, SideBarProfile } from "../atoms";
+import { Content, SideBarProfile, scrollStyle } from "../atoms";
 
 const { Sider } = Layout;
 
@@ -14,6 +14,10 @@ const CommonSider = styled(Sider)`
   top: 0;
   height: 100vh;
   height: -webkit-fill-available;
+
+  & > div:first-child {
+    ${scrollStyle}
+  }
 
   ${(p) =>
     p.isLeftSider &&
@@ -100,7 +104,10 @@ export function MainTemplate({ sidebar, children, noPadding }) {
 
   return (
     <Layout
-      style={{ minHeight: "100%", backgroundColor: "transparent" }}
+      style={{
+        minHeight: "100%",
+        backgroundColor: "transparent",
+      }}
       hasSider
     >
       <CommonSider

@@ -29,7 +29,7 @@ export const fromGithub = [
       />
     ),
     icon: <SearchOutlined />,
-    name: "graph ai snake",
+    name: "Змейка на графах",
   },
   {
     path: "/graph",
@@ -52,7 +52,7 @@ export const fromGithub = [
       />
     ),
     icon: <SearchOutlined />,
-    name: "graph search path",
+    name: "Поиск пути на графах",
   },
   {
     path: "/parser",
@@ -63,7 +63,7 @@ export const fromGithub = [
       />
     ),
     icon: <SearchOutlined />,
-    name: "parser gui",
+    name: "Парсер DOM",
   },
   {
     path: "/creator",
@@ -74,7 +74,7 @@ export const fromGithub = [
       />
     ),
     icon: <SearchOutlined />,
-    name: "no code editor",
+    name: "Редактор блоков",
   },
   {
     path: "/react",
@@ -85,7 +85,7 @@ export const fromGithub = [
       />
     ),
     icon: <SearchOutlined />,
-    name: "my react",
+    name: "Минимальный react",
   },
   {
     path: "/styled",
@@ -96,7 +96,7 @@ export const fromGithub = [
       />
     ),
     icon: <SearchOutlined />,
-    name: "my styled",
+    name: "Минимальный styled",
   },
 ];
 

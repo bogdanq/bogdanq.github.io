@@ -11,6 +11,16 @@ body {
   overflow-x: hidden;
   background-color: var(--hub-menu-bg);
   scroll-behavior: smooth;
+  &::-webkit-scrollbar {
+    width: 4px;
+  }
+  &::-webkit-scrollbar-corner {
+    background: transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: #8d8c9f;
+    border-radius: 4px;
+  }
 }
 
 #root {

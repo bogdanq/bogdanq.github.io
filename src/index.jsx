@@ -5,6 +5,7 @@ import { routes } from "./pages";
 import "./ui/cust.less";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
+
 root.render(
   <React.StrictMode>
     <Router>{routes}</Router>
