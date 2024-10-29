@@ -5,7 +5,7 @@ import styled from "styled-components";
 import html2canvas from "jspdf-html2canvas";
 import { DefaultSidebar } from "../../ui/organisms";
 import { MainTemplate } from "../../ui/templates";
-import bio from "../../assets/bio.jpeg";
+import bio from "../../assets/bio.jpg";
 import { useTimeWork } from "./use-time-work";
 import { works, paralelWorks } from "./data-mock";
 
@@ -25,7 +25,6 @@ const Header = styled.div`
   }
 
   img {
-    width: 200px;
     height: 270px;
     border-radius: 10px;
     margin-left: 3%;
@@ -99,25 +98,37 @@ export function VCPage({ snipet }) {
         />
         <Header id="divToPrint">
           <Row>
-            <Col xs={24} xl={5}>
+            <Col xs={24} xl={7}>
               <img src={bio} alt="bio" />
             </Col>
 
-            <Col xs={24} xl={19}>
+            <Col xs={24} xl={17}>
               <Typography.Title level={3}>Шеломанов Богдан</Typography.Title>
               <Typography.Title level={4}>Frontend developer</Typography.Title>
+              <p>
+                Frontend разработчик с большим опытом в создании
+                высококачественных веб и мобильных приложений. Специализируюсь
+                на использовании React и TypeScript для разработки интерактивных
+                пользовательских интерфейсов. Имею опыт работы с управлением
+                состоянием приложений через Redux и Effector, а также
+                интеграцией с GraphQL через Apollo. Уверенно применяю
+                styled-components (css-modules, styled-components, linaria,
+                reshadow) для стилизации компонентов и пишу юнит-тесты для
+                обеспечения надежности кода. Занимаюсь аналитикой
+                пользовательского поведения для оптимизации интерфейсов и
+                повышения их эффективности.
+              </p>
 
               <p>
                 На высоком уровне работаю с библиотекой React, видел множество
                 подходов к разработке SPA. В свободное время изучаю реакт
-                изнутри (работу хуков, стадии и режимы работы библиотеки).
-                Владею различными стейт менеджерами: Effector, Redux (...и
-                окружение), Apollo Client. Использую как препроцессоры, так и
-                css-modules, styled-components, linaria, reshadow. Работаю с
-                React hooks, но так же легко пишу и на классах. Умею писать
-                ui-компоненты, знаком с различными методологиями. Так же могу
-                использовать и фреймворк Nextjs. Умею тестировать свой код.
+                изнутри (работу хуков, стадии и режимы работы
+                библиотеки).Работаю с React hooks, но так же легко пишу и на
+                классах. Умею писать ui-компоненты, знаком с различными
+                методологиями. Так же могу использовать и фреймворк Nextjs. Умею
+                тестировать свой код.
               </p>
+
               <p>
                 Свободно пишу на Typescript и на хорошем уровне владею Git.
                 Знаком с принципами ООП и ФП, использовал некоторые на практике.
@@ -168,7 +179,7 @@ export function VCPage({ snipet }) {
                 Github
               </a>
               <a
-                href="https://teleg.run/bshelomanov"
+                href="https://teleg.run/bshelomanov_32"
                 rel="noreferrer"
                 target="_blank"
               >

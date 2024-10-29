@@ -1,7 +1,7 @@
 import { Typography, Col, Row } from "antd";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import bio from "../../assets/bio.jpeg";
+import bio from "../../assets/bio.jpg";
 
 const Wrapper = styled.div`
   border-radius: 8px;
