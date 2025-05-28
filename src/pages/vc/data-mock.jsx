@@ -31,11 +31,13 @@ export const skils = {
   rq: "React query",
   analitics: "Аналитика",
   next: "Next js",
+  ww: "Web worker",
+  mf: "Micro frontend",
 };
 
 export const works = [
   {
-    title: "ПАО Сбербанк (руководитель направления)",
+    title: "ПАО Сбербанк (КАП SberData руководитель направления)",
     subTitle: <p>март 2023 - текущее время</p>,
     status: "finish",
     description: (
@@ -56,7 +58,10 @@ export const works = [
           </p>
 
           <p>
-            Раработка <b>графовой</b> платформы для визуализации данных
+            Раработка <b>графовой</b> платформы для визуализации направленных
+            данных с вложенными вершинами (data lineage), встраимоевого в
+            дататеку. Придумал как хранить проиндексированные данные и создал
+            функционал платформы (нагрузка порядка 20 тысяч вершин)
           </p>
           <p>
             Участвовал в хакатонах, крайний в командной номинации "Лучший по
@@ -64,14 +69,24 @@ export const works = [
           </p>
           <p>
             Участие в постановке задач, обсуждении аналитики, оценки времени,
-            code review
+            code review, сборке проектов.
           </p>
         </div>
-        {["ts", "react", "rq", "er", "rx", "sc", "ut", "antd", "analitics"].map(
-          (skill) => (
-            <Tag key={skill}>{skils[skill]}</Tag>
-          )
-        )}
+        {[
+          "ts",
+          "react",
+          "ww",
+          "mf",
+          "rq",
+          "er",
+          "rx",
+          "sc",
+          "ut",
+          "antd",
+          "analitics",
+        ].map((skill) => (
+          <Tag key={skill}>{skils[skill]}</Tag>
+        ))}
       </>
     ),
   },
