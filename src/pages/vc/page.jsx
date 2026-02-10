@@ -136,33 +136,7 @@ export function VCPage({ snipet }) {
                 (используя mongoDB или postgress), сделать как REST так и
                 GraphQl API (но сервер интересует в меньшей степени).
               </p>
-              <p>
-                Так же делал реализацию
-                <a
-                  href="https://codesandbox.io/s/redux-timer-njlh5"
-                  rel="noreferrer"
-                  target="_blank"
-                >
-                  Redux
-                </a>
-                , пробовал сделать мини
-                <a
-                  href="https://codesandbox.io/s/my-react-dhuzx"
-                  rel="noreferrer"
-                  target="_blank"
-                >
-                  React
-                </a>
-                , выполнял реализацию
-                <a
-                  href="https://codesandbox.io/s/mystyled-t7p2d?file=/src/index.js:788-800"
-                  rel="noreferrer"
-                  target="_blank"
-                >
-                  Styled components
-                </a>
-                .
-              </p>
+
               <p>
                 Постоянно стараюсь улучшать свои навыки. Быстро осваиваюсь на
                 новых проектах. Ищу компанию (команду разработчиков) в которой
@@ -178,7 +152,7 @@ export function VCPage({ snipet }) {
                 Github
               </a>
               <a
-                href="https://teleg.run/bshelomanov_32"
+                href="https://teleg.run/bshelomanov"
                 rel="noreferrer"
                 target="_blank"
               >
@@ -210,7 +184,7 @@ export function VCPage({ snipet }) {
 
           <Col xs={24} xl={12}>
             <Typography.Title level={4}>
-              Работа для саморазвития
+              Работа для саморазвития, опенсорс и стартапы
             </Typography.Title>
             <Steps progressDot direction="vertical" items={paralelWorks} />
           </Col>
