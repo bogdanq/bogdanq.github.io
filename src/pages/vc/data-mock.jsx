@@ -312,7 +312,7 @@ export const paralelWorks = [
   },
   {
     title: "Mobile app Explory",
-    subTitle: <p>апрель 2020 - февраль 2021 (11 месяцев)</p>,
+    subTitle: <p>апрель 2020</p>,
     status: "finish",
     description: (
       <>
@@ -330,11 +330,11 @@ export const paralelWorks = [
 
         <p>
           <a
-            href="https://raw.githubusercontent.com/bogdanq/bogdanq.github.io/refs/heads/master/src/assets/1c.png"
+            href="https://raw.githubusercontent.com/bogdanq/bogdanq.github.io/refs/heads/master/src/assets/explory.jpg"
             rel="noreferrer"
             target="_blank"
           >
-            Скрин экрана
+            Скрин из маркета
           </a>
         </p>
 
