@@ -256,6 +256,15 @@ export const paralelWorks = [
           создавать вложенные структуры, подсказки и быстрые ответы, блоки по
           увловию
         </p>
+        <p>
+          <a
+            href="https://raw.githubusercontent.com/bogdanq/bogdanq.github.io/refs/heads/master/src/assets/1c.png"
+            rel="noreferrer"
+            target="_blank"
+          >
+            Скрин доски
+          </a>
+        </p>
 
         {["ts", "react", "ut", "ai", "er", "rf"].map((skill) => (
           <Tag key={skill}>{skils[skill]}</Tag>
@@ -308,15 +317,25 @@ export const paralelWorks = [
     description: (
       <>
         <p>
-          Разработка мобильного приложения для поиска мероприятий
+          Разработка своего стартапа - мобильного приложения для поиска
+          мероприятий
           <span>
-            {" "}
             <a href="https://explory.io/" rel="noreferrer" target="_blank">
               Explory
-            </a>{" "}
+            </a>
           </span>
           (более 80-ти экранов), используя методологию atomic design и feature
           slices
+        </p>
+
+        <p>
+          <a
+            href="https://raw.githubusercontent.com/bogdanq/bogdanq.github.io/refs/heads/master/src/assets/1c.png"
+            rel="noreferrer"
+            target="_blank"
+          >
+            Скрин экрана
+          </a>
         </p>
 
         {["ts", "flow", "react", "rn", "er"].map((skill) => (
